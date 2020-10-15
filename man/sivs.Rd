@@ -2,7 +2,7 @@
 % Please edit documentation in R/sivs.R
 \name{sivs}
 \alias{sivs}
-\title{Seed Independent Variable Selection}
+\title{Stable Iterative Variable Selection}
 \usage{
 sivs(
   x,
@@ -59,7 +59,7 @@ An object with S3 class "sivs".
   run.info$sessionInfo:  The object produced by utils::sessionInfo()
 }
 \description{
-The name is an acronym for Seed Independent Variable Selection.
+The name is an acronym for Stable Iterative Variable Selection.
 This function will iteratively run a machine learning method that can
 incorporate a shrinkage method using multiple random seeds in order to find
 the smallest set of features that can robustly be predictive.

@@ -1,8 +1,8 @@
 Package: sivs
 Type: Package
-Title: Seed Independent Variable Selection
-Version: 0.2.2
-Date: 2020-09-11
+Title: Stable Iterative Variable Selection
+Version: 0.2.3
+Date: 2020-10-15
 Authors@R: c(person(given = "Mehrad", family = "Mahmoudian",
                     role = c("aut", "cre"),
                     email = "mehrad.mahmoudian@utu.fi",
@@ -33,11 +33,11 @@ LazyData: true
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-10-01 09:34:45 UTC; mehrad
+Packaged: 2020-10-15 10:29:42 UTC; mehrad
 Author: Mehrad Mahmoudian [aut, cre] (<https://orcid.org/0000-0001-7650-1862>),
   Mikko Venäläinen [aut, rev] (<https://orcid.org/0000-0003-1777-4259>),
   Riku Klèn [aut, ths] (<https://orcid.org/0000-0002-0982-8360>),
   Laura Elo [aut, ths, fnd] (<https://orcid.org/0000-0001-5648-4532>)
 Maintainer: Mehrad Mahmoudian <mehrad.mahmoudian@utu.fi>
 Repository: CRAN
-Date/Publication: 2020-10-06 12:40:03 UTC
+Date/Publication: 2020-10-15 15:10:02 UTC
