@@ -19,6 +19,7 @@ sivs(
   return.roc = FALSE,
   return.sessionInfo = TRUE,
   lib.paths = .libPaths(),
+  debug.mode = FALSE,
   ...
 )
 }
@@ -50,6 +51,8 @@ sivs(
 \item{return.sessionInfo}{Logical. Whether the utils::sessionInfo() be included in the final object. This is useful for reproducibility purposes. Default is TRUE.}
 
 \item{lib.paths}{A character vector that contains the paths that the dependency libraries are in it. REMEMBER to set this if you are using packrat.}
+
+\item{debug.mode}{Whether or not the debug mode should be enabled.}
 
 \item{...}{Other parameters to be passed to the training method. For example the value of alpha in glmnet.}
 }
