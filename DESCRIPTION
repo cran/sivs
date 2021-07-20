@@ -1,8 +1,8 @@
 Package: sivs
 Type: Package
 Title: Stable Iterative Variable Selection
-Version: 0.2.4
-Date: 2020-11-04
+Version: 0.2.5
+Date: 2021-07-20
 Authors@R: c(person(given = "Mehrad", family = "Mahmoudian",
                     role = c("aut", "cre"),
                     email = "mehrad.mahmoudian@utu.fi",
@@ -26,18 +26,18 @@ Description: An iterative feature selection method (manuscript submitted) that
     feature reduction in order to shrink down the feature space into a small
     and yet robust set.
 License: GPL-3
-URL: https://github.com/mmahmoudian/sivs
+URL: https://github.com/mmahmoudian/sivs,
+        https://doi.org/10.1093/bioinformatics/btab501
 BugReports: https://github.com/mmahmoudian/sivs/issues
 Encoding: UTF-8
-LazyData: true
 RoxygenNote: 7.1.1
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2020-11-04 21:59:31 UTC; mehrad
+Packaged: 2021-07-20 12:01:43 UTC; mehrad
 Author: Mehrad Mahmoudian [aut, cre] (<https://orcid.org/0000-0001-7650-1862>),
   Mikko Venäläinen [aut, rev] (<https://orcid.org/0000-0003-1777-4259>),
   Riku Klèn [aut, ths] (<https://orcid.org/0000-0002-0982-8360>),
   Laura Elo [aut, ths, fnd] (<https://orcid.org/0000-0001-5648-4532>)
 Maintainer: Mehrad Mahmoudian <mehrad.mahmoudian@utu.fi>
 Repository: CRAN
-Date/Publication: 2020-11-04 22:30:02 UTC
+Date/Publication: 2021-07-20 15:50:02 UTC
