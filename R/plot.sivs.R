@@ -64,9 +64,6 @@ plot.sivs <- function(x, type = c("frequency", "coef", "rfe"),
     
     #-------[ initialize some variables ]-------#
     {
-        # define the list of accepatble names that the S3 object should have
-        acceptable.object.names <- c("iterative.res", "selection.freq", "vimp", "rfe", "rfe.issues", "run.info", "x", "y")
-        
         # define the types that this function can plot
         acceptable.types <- c("frequency", "coef", "rfe")
     }
@@ -308,6 +305,12 @@ plot.sivs <- function(x, type = c("frequency", "coef", "rfe"),
                 {
                     # if user have asked for specific strictness to be plotted over
                     if(!is.null(suggestion_strictness)){
+                        #>>==<v>==>> ToDo: Add a part to warn if all the aucs were NAs (I don't know why this should happen though! Julia might have this issue >>==<v>==>>
+                        if(all(sapply(x$rfe, function(x){ all(sapply(x, "[[", "auc")) }))){
+                            warning("")
+                        }
+                        #<<==<^>==<< ToDo: 1 <<==<^>==<<
+                        
                         # extract the median of AUCs from the sivs object
                         tmp.median.AUROCs <- sapply(x$rfe,
                                                 function(x){
