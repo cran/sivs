@@ -782,7 +782,8 @@ sivs <- function(x, y, test.ratio = 1/3, method = "glmnet",
                                 }else{
                                     tmp.dots[["family"]] <- "multinomial"
                                 }
-                                
+
+                                # TODO: Why this is shown even when the family is set to binomial
                                 # produce proper warning
                                 func.warning("The method \"glmnet\" needs the argument 'family' to be filled. ",
                                                 "Since it was not provided by the user and based on the factor levels ",

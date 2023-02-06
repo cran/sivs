@@ -15,7 +15,7 @@ suggest(object, strictness = 0.01, plot = FALSE)
 }
 \value{
 A character vector that contains the names of suggested features based
-on the defined strictness.
+on the defined strictness. If the provided sivs object does not have any feature with VIMP score higher than zero, you will get an empty vector along with a warning. If the provided vector has some features with VIMP>0 but after applying the strictness and filtering, we don't end up with any feature left to suggest, you will recieve an empty vector along with a message. Both warnings and messages can be suppressed in R by `suppressWarnings()` and `suppressMessages()` respectively.
 }
 \description{
 A function to suggest the user a set of features based on sivs object and the provided strictness
