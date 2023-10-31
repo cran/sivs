@@ -1,11 +1,11 @@
 Package: sivs
 Type: Package
 Title: Stable Iterative Variable Selection
-Version: 0.2.9
-Date: 2023-03-23
+Version: 0.2.10
+Date: 2023-10-31
 Authors@R: c(person(given = "Mehrad", family = "Mahmoudian",
                     role = c("aut", "cre"),
-                    email = "mehrad.mahmoudian@utu.fi",
+                    email = "m.mahmoudian@gmail.com",
                     comment = c(ORCID = "0000-0001-7650-1862")),
              person(given = "Mikko", family = "Venäläinen",
                     role = c("aut", "rev"),
@@ -33,11 +33,11 @@ Encoding: UTF-8
 RoxygenNote: 7.2.3
 VignetteBuilder: markdown, knitr
 NeedsCompilation: no
-Packaged: 2023-03-23 11:33:20 UTC; mehrad
+Packaged: 2023-10-31 11:53:14 UTC; mehrad
 Author: Mehrad Mahmoudian [aut, cre] (<https://orcid.org/0000-0001-7650-1862>),
   Mikko Venäläinen [aut, rev] (<https://orcid.org/0000-0003-1777-4259>),
   Riku Klèn [aut, ths] (<https://orcid.org/0000-0002-0982-8360>),
   Laura Elo [aut, ths, fnd] (<https://orcid.org/0000-0001-5648-4532>)
-Maintainer: Mehrad Mahmoudian <mehrad.mahmoudian@utu.fi>
+Maintainer: Mehrad Mahmoudian <m.mahmoudian@gmail.com>
 Repository: CRAN
-Date/Publication: 2023-03-23 12:10:02 UTC
+Date/Publication: 2023-10-31 16:20:06 UTC
