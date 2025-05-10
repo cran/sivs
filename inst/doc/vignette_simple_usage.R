@@ -1,11 +1,21 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
 
 #save(list = c("train_x", "train_y", "validation_x", "validation_y", "sivs_obj"), file = "vignette_v0.2.1.RData")
-load(url("https://seafile.utu.fi/f/13e0ef294b374549b499/?dl=1"))
+tryCatch(expr = {
+             load(url("https://seafile.utu.fi/f/13e0ef294b374549b499/?dl=1"))
+         },
+         error = function(x){
+             cat("There was a problem in fetching and loading the files from internet witth the following error:\n",
+                 x$message,
+                 "\nAborting building the vignette.")
+
+             # exit knitting the vignette early
+             knitr::knit_exit()
+         })
 
 ## -----------------------------------------------------------------------------
 library("varhandle")
